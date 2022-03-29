@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct InputFieldWithIcon: View {
-    @State var stateVar: String = ""
+    // for this component to receive state value from its parent view,
+    // the variable - textValue in this case - must be decorated with @Binding
+    // that attaches it to the state value iin the parent view.
+    @Binding var textValue: String
     var placeholderTitle: String = ""
+    
     var body: some View {
         HStack {
             Image(systemName: "envelope.fill")
@@ -18,17 +22,10 @@ struct InputFieldWithIcon: View {
                 .aspectRatio(contentMode: .fit)
                 .foregroundColor(.black)
                 
-            TextField(placeholderTitle, text: $stateVar)
+            TextField(placeholderTitle, text: $textValue)
                 .padding(10)
         }.padding(15)
             .border(.gray)
     }
 }
 
-struct InputFieldWithIcon_Previews: PreviewProvider {
-    static var previews: some View {
-        InputFieldWithIcon()
-            .previewLayout(.sizeThatFits)
-            
-    }
-}

@@ -16,7 +16,7 @@ import SwiftUI
      @State public var error: String = ""
 
      func onSubmitData() {
-         print(firstName, lastName, email, password)
+         print("First Name: \(firstName), Last Name: \(lastName), Email: \(email), Password: \(password)")
      }
      var body: some View {
          ScrollView {
