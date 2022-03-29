@@ -11,7 +11,8 @@ import SwiftUI
 struct swift_ui_screensApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            RegisterView()
         }
     }
 }

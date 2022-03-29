@@ -15,6 +15,9 @@ import SwiftUI
      @State private var password: String = ""
      @State public var error: String = ""
 
+     func onSubmitData() {
+         print(firstName, lastName, email, password)
+     }
      var body: some View {
          ScrollView {
              ZStack {
@@ -41,7 +44,7 @@ import SwiftUI
                      Text(error).foregroundStyle(.red)
                      Spacer()
                      VStack {
-                         Button("Register", action: {print(firstName)})
+                         Button("Register", action: {onSubmitData()})
                             .frame(width: 320, height: 20, alignment: .center)
                             .scenePadding()
                             .background(.black)
@@ -57,13 +60,12 @@ import SwiftUI
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .scenePadding()
              }
-         }.background(Image("Gradient-1"))
-            .edgesIgnoringSafeArea(.all)
+         }.edgesIgnoringSafeArea(.all)
          
      }
  }
 
- struct LoginView_Previews: PreviewProvider {
+ struct RegisterView_Previews: PreviewProvider {
      static var previews: some View {
          RegisterView()
      }
