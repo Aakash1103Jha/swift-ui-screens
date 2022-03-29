@@ -13,6 +13,7 @@
 		115DAF8D27F352F4009DFFC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115DAF8C27F352F4009DFFC2 /* Preview Assets.xcassets */; };
 		115DAF9627F3536E009DFFC2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DAF9527F3536E009DFFC2 /* LoginView.swift */; };
 		115DAF9827F3537D009DFFC2 /* b5619d138700157.62222aa57b79d.png in Resources */ = {isa = PBXBuildFile; fileRef = 115DAF9727F3537D009DFFC2 /* b5619d138700157.62222aa57b79d.png */; };
+		115DAF9A27F35412009DFFC2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115DAF9927F35412009DFFC2 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		115DAF8C27F352F4009DFFC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		115DAF9527F3536E009DFFC2 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		115DAF9727F3537D009DFFC2 /* b5619d138700157.62222aa57b79d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b5619d138700157.62222aa57b79d.png; sourceTree = "<group>"; };
+		115DAF9927F35412009DFFC2 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		115DAF9327F35353009DFFC2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				115DAF9927F35412009DFFC2 /* RegisterView.swift */,
 				115DAF9527F3536E009DFFC2 /* LoginView.swift */,
 			);
 			path = Views;
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				115DAF9627F3536E009DFFC2 /* LoginView.swift in Sources */,
+				115DAF9A27F35412009DFFC2 /* RegisterView.swift in Sources */,
 				115DAF8827F352F3009DFFC2 /* ContentView.swift in Sources */,
 				115DAF8627F352F3009DFFC2 /* swift_ui_screensApp.swift in Sources */,
 			);
